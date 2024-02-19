@@ -6,6 +6,6 @@ module.exports.heroCreateSchema = yup.object({
     realName: yup.string(),
     originDescription: yup.string(),
     catchPhrase: yup.string(),
-    powers: yup.array.of(yup.string)
+    powers: yup.array().of(yup.string())
 });
 
