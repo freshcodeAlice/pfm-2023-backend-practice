@@ -5,6 +5,7 @@ module.exports.heroCreateSchema = yup.object({
     nickname: yup.string().required().min(1),
     realName: yup.string(),
     originDescription: yup.string(),
-    catchPhrase: yup.string()
+    catchPhrase: yup.string(),
+    powers: yup.array.of(yup.string)
 });
 

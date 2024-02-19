@@ -8,7 +8,7 @@ module.exports.createOne = async (req, res, next) => {
         const hero = await Hero.create(body);
         const image = await hero.createHeroImage({imagePath: filename});
         if (powers) {
-            await Hero.addSuperpower(powers);
+            await Hero.addSuperpowers(powers);
         }
         res.status(201).send({data: hero})
     } catch(error) {
