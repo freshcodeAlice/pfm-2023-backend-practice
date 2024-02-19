@@ -36,7 +36,7 @@ module.exports = (sequelize, DataTypes) => {
       field: 'origin_description',
       type: DataTypes.TEXT
     },
-    catch_phrase: {
+    catchPhrase: {
       field: 'catch_phrase',
       type: DataTypes.TEXT
     }
